@@ -31,13 +31,17 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+          
+      # Runs a set of commands using the runners shell to compile project
+      - name: step 3 compile maven project with github actions
+        run: mvn -B compile package --file my-app/pom.xml
 
-      # Runs a set of commands using the runners shell
-      - name: step 3 build maven project with github actions
+      # Runs a set of commands using the runners shell to package project
+      - name: step 4 build maven project with github actions
         run: mvn -B package package --file my-app/pom.xml
         
-      #
-      - name: step 4 list current directory
+      
+      - name: step 5 list current directory
         run:  ls -a 
         
       - name:  step 5 checking destination diretory
