@@ -1,4 +1,4 @@
-# Publish GitHub workflow artifacts 
+# Publish GitHub workflow artifacts .
 name: Publish GitHub Actions Artifacts
 
 on:
