@@ -40,3 +40,8 @@ jobs:
       - name: step 4 list current directory
         run:  ls -a 
         
+      - name:  step 5 checking destination diretory
+        run:  |
+          cd target
+          ls -a
+        
