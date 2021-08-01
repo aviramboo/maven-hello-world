@@ -34,7 +34,9 @@ jobs:
           
       # Runs a set of commands using the runners shell to compile project
       - name: step 3 compile maven project with github actions
-        run: mvn -B compile package --file my-app/pom.xml
+        run: |
+          mvn -B compile package --file my-app/pom.xml
+          mkdir staging && cp my-app/target/*.jar staging
 
       # Runs a set of commands using the runners shell to package project
       - name: step 4 build maven project with github actions
@@ -48,4 +50,11 @@ jobs:
         run:  |
           cd my-app/target
           ls -a
+          
+     # upload app compiled files to artifact
+     - name: Step 6 - GItHub actions Artifact
+        uses: actions/upload-artifact@v2
+        with: 
+          name: app-for-download
+          path: staging
         
