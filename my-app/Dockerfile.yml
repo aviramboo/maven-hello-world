@@ -20,6 +20,6 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
-COPY --from=builder app/target/my-app-1.0.0-SNAPSHOT.jar .
+COPY --from=builder app/target/*.jar .
 
-RUN java -jar ./my-app-1.0.0-SNAPSHOT.jar "$@"
+RUN java -jar ./*.jar.jar "$@"
