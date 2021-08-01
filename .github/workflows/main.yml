@@ -34,7 +34,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: step 3 build maven project with github actions
-        run: mvn -B package --file pom.xml
+        run: mvn -B package package --file pom.xml
         
       #
       - name: step 4 list current directory
