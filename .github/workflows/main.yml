@@ -51,10 +51,10 @@ jobs:
           cd my-app/target
           ls -a
           
-     # upload app compiled files to artifact
-     - name: Step 6 - GItHub actions Artifact
-        uses: actions/upload-artifact@v2
-        with: 
-          name: app-for-download
-          path: staging
+      # upload app compiled files to artifact
+      - name: Step 6 - GItHub actions Artifact
+         uses: actions/upload-artifact@v2
+         with: 
+           name: app-for-download
+           path: staging
         
