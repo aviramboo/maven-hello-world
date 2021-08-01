@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: GITHUB-Ations-Maven-Build
+name: GITHUB-Ations-Maven-Build!
 
 # Controls when the workflow will run
 on:
