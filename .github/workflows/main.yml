@@ -40,10 +40,10 @@ jobs:
 
       # Runs a set of commands using the runners shell to package project
       - name: step 4 build maven project with github actions
-        run: mvn -B  package --file my-app/pom.xml
+        run: mvn -B  package package --file my-app/pom.xml
         
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn --batch-mode deploy --file my-app/pom.xml
+      #- name: Publish to GitHub Packages Apache Maven
+       # run: mvn --batch-mode deploy --file my-app/pom.xml
         
       
       - name: step 5 list current directory
