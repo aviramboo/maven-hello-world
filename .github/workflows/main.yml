@@ -41,8 +41,8 @@ jobs:
       - name: step 4 build maven project with github actions
         run: mvn -B  package package --file my-app/pom.xml
         
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn clean install --file my-app/pom.xml
+      #- name: Publish to GitHub Packages Apache Maven
+      #  run: mvn clean install --file my-app/pom.xml
         
       
       - name: step 5 list current directory
