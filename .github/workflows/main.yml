@@ -53,9 +53,9 @@ jobs:
           cd my-app/target
           ls -a
         
-      - name: Step 6 - GItHub actions Artifact
+      - name: GItHub actions Artifact
         uses: actions/upload-artifact@v2
         with: 
           name: github-actions-artifact
-          path: staging
+
         
