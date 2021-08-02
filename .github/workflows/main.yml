@@ -60,10 +60,8 @@ jobs:
           name: github-actions-artifact
           path: staging
                   
-      #- name: Set up Docker Buildx
-      #  uses: docker/setup-buildx-action@v1
-      #  with:
-      #    path: /tmp/buildkit-mount*
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
       
       - name: Login to DockerHub
         uses: docker/login-action@v1 
@@ -77,5 +75,6 @@ jobs:
         with:
           push: true
           tags: aviram1981/my-app:latest
+          path: my-app/target
 
         
