@@ -36,7 +36,7 @@ jobs:
       - name: step 3 compile maven project with github actions
         run: |
           mvn -B compile package --file my-app/pom.xml
-          mkdir staging && cp my-app/target/my-app-1.0.0-SNAPSHOT.jar staging
+      #    mkdir staging && cp my-app/target/my-app-1.0.0-SNAPSHOT.jar staging
 
       # Runs a set of commands using the runners shell to package project
       - name: step 4 build maven project with github actions
