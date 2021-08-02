@@ -164,10 +164,10 @@
         <arguments>
           <argument>login</argument>
           <argument>-u</argument>
-          <argument>${docker.user}</argument>
+          <argument>aviram1981</argument>
           <argument>-p</argument>
-          <argument>${docker.password}</argument>
-          <argument>${docker.url}</argument>
+          <argument>D0K3!er$5S</argument>
+          <argument>https://hub.docker.com/repository/docker/aviram1981/main-lab</argument>
         </arguments>
       </configuration>
     </execution>
